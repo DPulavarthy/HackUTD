@@ -61,7 +61,7 @@ const Home = () => {
           <div className='content'>Airbag</div>
         </div>
 
-        <div className='tab' id='brakeW'>
+        <div className='tab' id='brakesW'>
           <div className='icon' id="brake"></div>
           <div className='content'>Brakes</div>
         </div>

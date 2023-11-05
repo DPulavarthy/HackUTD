@@ -1,0 +1,166 @@
+.back {
+    top: 10px;
+    left: 10px;
+    background-color: #f04747;
+    padding: 0 7px 0 5px;
+    border-radius: 999px;
+    position: fixed;
+    color: white;
+}
+
+#graph-b {
+    width: 100vw;
+    aspect-ratio: 1.5/1;
+    margin: 20px auto;
+    border-radius: 5px;
+    background: url(../../public/graphs/brake_pad_thickness.png) no-repeat center center;
+    background-size: contain;
+}
+
+.title {
+    font-family: "Avenir Black";
+    font-size: 20px;
+    width: 100%;
+    padding: 7px 0;
+    text-align: center;
+    background: #f04747;
+    color: white;
+}
+
+#content {
+    width: 90%;
+    padding: 0 2.5%;
+    margin: 0 auto;
+    background: #fefefe;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item {
+    margin: auto 0;
+}
+
+h4 {
+    font-family: "Avenir Black";
+    font-size: 22px;
+    margin: 0;
+    padding: 0 10px 0 30px;
+}
+
+#content p {
+    font-family: "Avenir Regular";
+    font-size: 12px;
+    margin: 10px 0 -8px 0;
+    padding: 0 0 0 30px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #747272;
+}
+
+.green h4:before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    background-color: #43b581;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 8px 2px 0 -20px;
+    position: absolute;
+}
+
+.item.yellow h4:before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    background-color: #faa61a;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 8px 2px 0 -20px;
+    position: absolute;
+}
+
+.item.red h4:before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    background-color: #f04747;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 8px 2px 0 -20px;
+    position: absolute;
+}
+
+.item.yellow,
+.item.red {
+    background: transparent;
+    border: none;
+}
+
+.appointment{
+    background-color: #f04747;
+    width: 80%;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transform: scale(0.9);
+}
+
+.appointment p{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    color: #fff
+}
+
+h2 {
+    margin: 5px 0;
+    font-family: "Avenir Black";
+    text-align: center;
+}
+
+
+#footer .appointment:nth-child(2) {
+    animation: loading 2s ease-in forwards;
+}
+
+#footer .appointment:nth-child(3) {
+    animation: loading 2s ease-in 1s forwards;
+}
+
+#footer .appointment:nth-child(4) {
+    animation: loading 2s ease-in 2s forwards;
+}
+
+@keyframes loading {
+    0% {
+        transform: scale(0.9);
+    }
+
+    30% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+main[data="green"] .title,
+main[data="green"] .back,
+main[data="green"] .appointment, 
+main[data="green"] .appointment p {
+    background: #43b581;
+    color: #151515;
+}

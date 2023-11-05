@@ -1,7 +1,7 @@
 import './battery.css'
 import './hvac.css'
 
-const Battery = () => {
+const Hvac = () => {
 
     let data = {
         "_id": "6547038db00d3721132b1fd5",
@@ -80,4 +80,4 @@ const Battery = () => {
     </>)
 }
 
-export default Battery; 
+export default Hvac; 
