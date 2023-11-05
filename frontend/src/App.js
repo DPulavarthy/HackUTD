@@ -14,13 +14,13 @@ function App() {
   return (
           <Router>
               <Routes>
-                  <Route path="/" element={<Login />} />
                   <Route path="/Login" element={<Login />} />
                   <Route path="/Home" element={<Home />} />
                   <Route path="/Logout" element={<Logout />} />
                   <Route path="/batteryW" element={<Battery />} />
                   <Route path="/hvacW" element={<Hvac />} />
                   <Route path="/brakesW" element={<Brakes />} />
+                  <Route path="/" element={<Login />} />
               </Routes>
           </Router>
   );
