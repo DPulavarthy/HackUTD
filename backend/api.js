@@ -37,7 +37,7 @@ function connect({ db, collection }) {
 // Connect to the database and give it the required collections.
 connect({
     db: 'Vehicle',
-    collection: ['battery', 'brakes', 'hvac']
+    collection: ['battery', 'brakes', 'hvac', 'config']
 })
     .then(console.log)
     .then(() => api())
