@@ -4,13 +4,13 @@ const Battery = () => {
 
     let data = {
         "_id": "6547038db00d3721132b1fd5",
-        "voltage": 120,
-        "current": 2,
-        "temperature": 82,
+        "voltage": 320,
+        "current": 80,
+        "temperature": 92,
         "charging": true,
         "chargingSpeed": 40,
         "dischargingSpeed": 0,
-        "batteryHealth": 88,
+        "batteryHealth": 68,
         "systemWarnings": ["Battery is overheating", "Battery is low"],
         "time": 1699154986028
     }
@@ -33,13 +33,13 @@ const Battery = () => {
                 </div>
                 <div className='item red'>
                     <p>Temperature:</p>
-                    <h4>{data.temperature} °C</h4>
+                    <h4>{data.temperature} °F</h4>
                 </div>
-                <div className='item yellow'>
+                <div className='item green'>
                     <p>Current:</p>
                     <h4>{data.current} A</h4>
                 </div>
-                <div className='item green'>
+                <div className='item'>
                     <p>Charging:</p>
                     <h4>{data.charging ? 'Yes' : 'No'}</h4>
                 </div>
@@ -61,7 +61,7 @@ const Battery = () => {
                 </div>
                 <div className='item'>
                     <p>Last Polled:</p>
-                    <h4>5 mins</h4>
+                    <h4>3 mins</h4>
                 </div>
             </div>
 

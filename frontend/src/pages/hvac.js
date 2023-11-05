@@ -9,9 +9,9 @@ const Hvac = () => {
         "outdoorTemperature": 80,
         "fanSpeed": "high",
         "airflow": 0.5,
-        "airQuality": 0.5,
+        "airQuality": 0.72,
         "energyUsage": 5,
-        "systemWarnings": ["Battery is overheating", "Battery is low"],
+        "systemWarnings": ["Battery is overheating"],
         "time": 1699154986028
     }
 
@@ -41,17 +41,17 @@ const Hvac = () => {
                 </div>
                 <div className='item green'>
                     <p>Airflow:</p>
-                    <h4>{data.airflow}</h4>
+                    <h4>{data.airflow * 100}%</h4>
                 </div>
                 <div className='item green'>
                     <p>Air Quality:</p>
-                    <h4>{data.airQuality}</h4>
+                    <h4>{data.airQuality * 100}%</h4>
                 </div>
                 <div className='item green'>
                     <p>Energy Usage:</p>
-                    <h4>{data.energyUsage} W</h4>
+                    <h4>{data.energyUsage} kW</h4>
                 </div>
-                <div className='item red'>
+                <div className='item yellow'>
                     <p>System Warnings:</p>
                     <h4>{data.systemWarnings.length || 'N/A'}</h4>
                 </div>

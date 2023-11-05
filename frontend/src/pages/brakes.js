@@ -6,8 +6,8 @@ const Brakes = () => {
     let data = {
         "_id": "6547019fb00d3721132b1fd3",
         "brakepadThickness": 8,
-        "brakeForce": 0.8,
-        "brakeTemperature": 73,
+        "brakeForce": 80,
+        "brakeTemperature": 102,
         "currentSpeed": 0,
         "brakeFluidLevel": 0.5,
         "systemWarnings": [],
@@ -30,9 +30,9 @@ const Brakes = () => {
                     <p>Brake Pad Thickness:</p>
                     <h4>{data.brakepadThickness} mm</h4>
                 </div>
-                <div className='item green'>
+                <div className='item yellow'>
                     <p>Brake Force:</p>
-                    <h4>{data.brakeForce} Nm</h4>
+                    <h4>{data.brakeForce} N</h4>
                 </div>
                 <div className='item yellow'>
                     <p>Brake Temperature:</p>
@@ -52,7 +52,7 @@ const Brakes = () => {
                 </div>
                 <div className='item'>
                     <p>Last Polled:</p>
-                    <h4>5 mins</h4>
+                    <h4>1 mins</h4>
                 </div>
             </div>
 
