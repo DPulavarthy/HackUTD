@@ -1,0 +1,46 @@
+.home-screen{
+    background-color: #fafafa;
+}
+
+fuel-info {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align elements to the left */
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 15%; /* Restrict the width to 15% of the screen width */
+  }
+  
+  /* Miles Left Text */
+  .fuel-info p {
+    font-size: 12px;
+    margin-left: 15px;
+    /* background-color: transparent; Remove this line */
+  }
+  
+  /* Percentage Bar Container */
+  .percentage-bar {
+    width: 100%; /* Full width of the container */
+    height: 7px;
+    background-color: #e0e0e0;
+    margin-left: 14px;
+    max-width: 20%;
+    max-height: 10%;
+    border-radius: 10px;
+  }
+  
+  /* Percentage Bar Filler */
+  .filler {
+    height: 100%;
+    background-color: #5b84f1;
+    transition: width 1s;
+    border-radius: 10px; /* Add rounded edges */
+  }
+
+  /* Fuel Icon */
+  .fa-gas-pump {
+    font-size: 20px;
+    margin-right: 10px;
+  }
+  
