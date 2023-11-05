@@ -21,9 +21,9 @@ const Header = () => {
           <span className={`triangle ${isDropdownOpen ? 'upside-down' : ''}`}>&#9660;</span>
         </div>
         <div id="myDropdown" className={`dropdown-content ${isDropdownOpen ? 'show' : ''}`}>
-          <a href='#'>2023 Prius</a>
-          <a href='#'>2023 Rav4</a>
-          <a href='#'>2024 Crown</a>
+          <p>2023 Prius</p>
+          <p>2023 Rav4</p>
+          <p>2024 Crown</p>
         </div>
       </div>
       <div className="profile-icon">
