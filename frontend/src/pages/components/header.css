@@ -1,83 +1,83 @@
 /* Header container styles */
 .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fafafa;
-    color: #FFFFFF;
-    margin-top: 10px;
-  }
-  
-  /* Dropdown container styles */
-  .car-dropdown {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-  }
-  
-  /* Dropdown button styles */
-  .dropbtn {
-    background-color: transparent;
-    color: black;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center; /* Center the text and triangle vertically */
-    margin-left: 10px;
-  }
-  
-  /* Dropdown button on hover & focus */
-  .dropbtn:hover,
-  .dropbtn:focus {
-    background-color: #2980B9;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    margin-top: 10px; /* Add spacing between dropdown and the button */
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    text-decoration: none;
-    display: block;
-    padding: 12px 16px;
-    font-family: 'Nunito', sans-serif;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-    background-color: #ddd;
-  }
-  
-  /* Show the dropdown menu */
-  .show {
-    display: block;
-  }
-  
-  /* Triangle styles */
-  .triangle {
-    font-size: 12px;
-    margin-left: 4px;
-  }
-  
-  /* Upside-down triangle styles */
-  .upside-down {
-    transform: rotate(180deg);
-  }
-  
-  /* Profile icon styles */
-  .profile-icon {
-    font-size: 24px;
-    color: black;
-    margin-right: 15px; /* Add spacing between the icon and the dropdown button */
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fafafa;
+  color: #ffffff;
+  padding-top: 10px;
+}
+
+/* Dropdown container styles */
+.car-dropdown {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Dropdown button styles */
+.dropbtn {
+  background-color: transparent;
+  color: black;
+  font-size: 18px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center; /* Center the text and triangle vertically */
+  margin-left: 20px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #2980b9;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  margin-top: 10px; /* Add spacing between dropdown and the button */
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 12px 16px;
+  font-family: "Nunito", sans-serif;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu */
+.show {
+  display: block;
+}
+
+/* Triangle styles */
+.triangle {
+  font-size: 12px;
+  margin: 4px 0 0 4px;
+}
+
+/* Upside-down triangle styles */
+.upside-down {
+  transform: rotate(180deg);
+}
+
+/* Profile icon styles */
+.profile-icon {
+  font-size: 24px;
+  color: black;
+  margin-right: 15px; /* Add spacing between the icon and the dropdown button */
+}

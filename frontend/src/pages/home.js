@@ -16,14 +16,20 @@ const Home = () => {
       <Header />
       <div className="fuel-info">
         <div className="fuel-icon">
-            <i className="fa fa-gas-pump"></i>
         </div>
-        <p>{milesLeft} mi</p>
+        <b>{milesLeft} mi</b>
         </div>
         <div className="percentage-bar">
             <div className="filler" style={{ width: `${percentage}%` }}></div>
         </div>
         <div className="car-image"/>
+        <div className="container">
+      <div className="line"></div>
+      <div className="rounded-rectangle">
+        {'Suggested Maintenance'}
+        <p>&#x1F893;</p>
+      </div>
+    </div>
     </div>
   );
 };
