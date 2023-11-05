@@ -51,11 +51,6 @@ const Home = () => {
           <div className='content'>Battery</div>
         </div>
 
-        <div className='tab red' id='brakeW'>
-          <div className='icon' id="brake"></div>
-          <div className='content'>Brakes</div>
-        </div>
-
         <div className='tab yellow' id='hvacW'>
           <div className='icon' id="hvac"></div>
           <div className='content'>HVAC</div>
@@ -64,6 +59,11 @@ const Home = () => {
         <div className='tab' id='airbagW'>
           <div className='icon' id="airbag"></div>
           <div className='content'>Airbag</div>
+        </div>
+
+        <div className='tab' id='brakeW'>
+          <div className='icon' id="brake"></div>
+          <div className='content'>Brakes</div>
         </div>
 
         <div className='tab' id='coolantW'>

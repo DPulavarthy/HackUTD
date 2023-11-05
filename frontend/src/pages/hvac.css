@@ -8,12 +8,12 @@
     color: white;
 }
 
-#graph {
+#graph-h {
     width: 100vw;
     aspect-ratio: 1.5/1;
     margin: 20px auto;
     border-radius: 5px;
-    background: url(../../public/graphs/battery_max_capacity.png) no-repeat center center;
+    background: url(../../public/graphs/hvac_temp.png) no-repeat center center;
     background-size: contain;
 }
 
@@ -97,7 +97,7 @@ h4 {
     border: none;
 }
 
-.appointment{
+.appointment {
     background-color: #f04747;
     width: 80%;
     height: 50px;
@@ -109,11 +109,11 @@ h4 {
     transform: scale(0.9);
 }
 
-.appointment p{
+.appointment p {
     text-align: center;
     padding: 0;
     margin: 0;
-    color: #fff
+    color: #fff;
 }
 
 h2 {
@@ -121,7 +121,6 @@ h2 {
     font-family: "Avenir Black";
     text-align: center;
 }
-
 
 #footer .appointment:nth-child(2) {
     animation: loading 2s ease-in forwards;
@@ -155,4 +154,12 @@ h2 {
     100% {
         transform: scale(1);
     }
+}
+
+main[data="yellow"] .title,
+main[data="yellow"] .back,
+main[data="yellow"] .appointment, 
+main[data="yellow"] .appointment p {
+    background: #faa61a;
+    color: #151515;
 }
