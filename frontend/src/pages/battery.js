@@ -45,11 +45,11 @@ const Battery = () => {
                 </div>
                 <div className='item green'>
                     <p>Charging Speed:</p>
-                    <h4>{data.chargingSpeed} W</h4>
+                    <h4>{data.chargingSpeed} kW</h4>
                 </div>
                 <div className='item green'>
                     <p>Discharging Speed:</p>
-                    <h4>{data.dischargingSpeed} W</h4>
+                    <h4>{data.dischargingSpeed} kW</h4>
                 </div>
                 <div className='item red'>
                     <p>Battery Health:</p>
