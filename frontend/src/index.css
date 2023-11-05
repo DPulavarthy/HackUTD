@@ -8,11 +8,17 @@
   src: url(../public/fonts/Avenir\ Heavy.ttf);
 }
 
+@font-face {
+  font-family: "Avenir Black";
+  src: url(../public/fonts/Avenir\ Black.ttf);
+}
+
 body {
   margin: 0;
   font-family: "Avenir Regular", system-ui;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
 }
 
 code {

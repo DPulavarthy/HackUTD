@@ -53,4 +53,4 @@ data = [days', capacity'];
 csvwrite('battery_max_capacity.csv', data);
 
 % Save the graph as a PNG file.
-saveas(gcf, 'brake_max_capacity.png');
+saveas(gcf, 'battery_max_capacity.png');

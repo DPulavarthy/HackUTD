@@ -56,5 +56,5 @@ function api() {
             let data = await database[req.params.id].findOne();
             res.status(200).json(data);
         })
-        .listen(3000, () => console.log('Server running on port 3000'));
+        .listen(3001, () => console.log('Server running on port 3001'));
 }

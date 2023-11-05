@@ -10,7 +10,7 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/battery" element={<Battery />} />
+                <Route path="/batteryW" element={<Battery />} />
             </Routes>
         </Router>
     </div>
