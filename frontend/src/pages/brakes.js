@@ -15,7 +15,7 @@ const Brakes = () => {
     }
 
     function goBack() {
-        window.location.href = `http://localhost:3000/Home`
+        window.location.href = `${window.location.origin}/Home`
     }
 
     return (<>
