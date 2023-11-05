@@ -15,12 +15,15 @@ const Home = () => {
     <div className="home-screen">
       <Header />
       <div className="fuel-info">
-        <i className="fas fa-gas-pump"></i>
+        <div className="fuel-icon">
+            <i className="fa fa-gas-pump"></i>
+        </div>
         <p>{milesLeft} mi</p>
         </div>
-            <div className="percentage-bar">
-                <div className="filler" style={{ width: `${percentage}%` }}></div>
-            </div>
+        <div className="percentage-bar">
+            <div className="filler" style={{ width: `${percentage}%` }}></div>
+        </div>
+        <div className="car-image"/>
     </div>
   );
 };
