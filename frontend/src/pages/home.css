@@ -110,3 +110,156 @@
   margin: -20px;
   font-size: 20px;
 }
+
+section {
+  margin-top: 10px;
+  height: 515px;
+  overflow: auto;
+}
+
+section > div {
+  display: flex;
+  align-items: center;
+  width: calc(95% - 24px);
+  margin: 0 2.5%;
+  padding: 10px;
+  background: #fefefe;
+  border-radius: 7px;
+  font-family: "Avenir Heavy", system-ui;
+  font-size: 20px;
+  margin-bottom: 10px;
+  border: 2px solid #43b581;
+  background: rgba(67, 181, 129, 0.5);
+}
+
+.red {
+  border: 2px solid #f04747;
+  background: rgba(240, 71, 71, 0.5);
+}
+
+
+.yellow {
+  border: 2px solid #faa61a;
+  background: rgba(250, 168, 26, 0.5);
+}
+
+section .icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+#brake {
+  background: url(../../public/icons/brake.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#hvac {
+  background: url(../../public/icons/hvac.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin: 0 25px 0 7px;
+}
+
+#airbag {
+  background: url(../../public/icons/airbag.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin: 0 25px 0 7px;
+}
+
+#battery {
+  background: url(../../public/icons/battery.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin: 0 15px 0 7px;
+}
+
+#dash {
+  background: url(../../public/icons/dashboard.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin: 0 20px 0 12px;
+}
+
+#coolant {
+  background: url(../../public/icons/fluids.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin: 0 21px 0 12px;
+}
+
+#lights {
+  background: url(../../public/icons/headlights.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin: 0 21px 0 13px;
+}
+
+#motor {
+  background: url(../../public/icons/motor.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin: 0 21px 0 13px;
+}
+
+#steering {
+  background: url(../../public/icons/steering.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin: 0 21px 0 13px;
+}
+
+#transmission {
+  background: url(../../public/icons/transmission.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin: 0 21px 0 13px;
+}
+
+#wheel {
+  background: url(../../public/icons/wheel.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin: 0 21px 0 13px;
+}
+
+#wiper {
+  background: url(../../public/icons/wiper.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  margin: 0 21px 0 13px;
+}
