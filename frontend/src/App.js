@@ -11,6 +11,8 @@ import Brakes from './pages/brakes'
 
 function App() {  
 
+  console.log(window.location.href)
+
   return (
           <Router>
               <Routes>
