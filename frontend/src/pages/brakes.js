@@ -20,7 +20,7 @@ const Brakes = () => {
 
     return (<>
         <main data="green">
-            <div className='title'>Brakes</div>
+            <div className='title'>Brakes (Pads)</div>
             <div className='back' onClick={goBack}>
                 <i className='fa fa-arrow-left'></i>
             </div>
@@ -48,7 +48,7 @@ const Brakes = () => {
                 </div>
                 <div className='item green'>
                     <p>System Warnings:</p>
-                    <h4>{data.systemWarnings.length || 'N/A'}</h4>
+                    <h4>{data.systemWarnings.length}</h4>
                 </div>
                 <div className='item'>
                     <p>Last Polled:</p>

@@ -17,7 +17,7 @@ const Home = () => {
   window.onload = () => {
     document.querySelectorAll('.tab').forEach(elem => {
       elem.addEventListener('click', (e) => {
-        if (working) return;
+        if (working || !['batteryW', 'hvacW', 'brakesW'].includes(e.target.id)) return;
         working = true;
           const id = e.target.id;
           window.location.href = `${window.location.href}${id}`;
