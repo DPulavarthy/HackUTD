@@ -22,8 +22,8 @@ const Header = () => {
         </div>
         <div id="myDropdown" className={`dropdown-content ${isDropdownOpen ? 'show' : ''}`}>
           <a>2023 Prius</a>
-          <a>Car 2</a>
-          <a>Car 3</a>
+          <a>2023 Rav4</a>
+          <a>2024 Crown</a>
         </div>
       </div>
       <div className="profile-icon">

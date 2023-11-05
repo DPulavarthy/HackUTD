@@ -2,8 +2,10 @@ import React from 'react';
 import './home.css';
 import Header from './components/header.js';
 import 'font-awesome/css/font-awesome.min.css';
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Home = () => {
+  
   // Sample data for miles left and max capacity
   const milesLeft = 250; // Replace with actual data
   const maxCapacity = 500; // Replace with actual data
@@ -20,17 +22,22 @@ const Home = () => {
         if (working || !['batteryW', 'hvacW', 'brakesW'].includes(e.target.id)) return;
         working = true;
           const id = e.target.id;
-          window.location.href = `${window.location.href}${id}`;
+          window.location.href = `${"http://localhost:3000/"}${id}`;
       });
     })
   }
 
-  return (<>
-    <div className="home-screen">
-      <Header />
-      <div className="fuel-info">
-        <div className="fuel-icon">
-        </div>
+  const {logout, isAuthenticated} = useAuth0();
+
+  if(isAuthenticated){
+    window.location.href = `http://localhost:3000/Logout`;
+  }else{
+      return (<>
+        <div className="home-screen">
+          <Header />
+          <div className="fuel-info">
+            <div className="fuel-icon">
+            </div>
         <b>{milesLeft} mi</b>
       </div>
       <div className="percentage-bar">
@@ -109,5 +116,6 @@ const Home = () => {
     </div>
   </>);
 };
+}
 
 export default Home;
