@@ -4,7 +4,7 @@ const Login = () => {
 
     window.onload = () => {
         if (window.location.href.includes('?code=')) { // Removed the forward slashes around the string
-          window.location.href = `${window.location.origin}/Home`;
+          window.location.href = `${window.location.href.match(/https:\/\/.*?\//g)}Home`;
         }
       }
     

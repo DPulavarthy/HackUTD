@@ -15,7 +15,7 @@ const Brakes = () => {
     }
 
     function goBack() {
-        window.location.href = `${window.location.origin}/Home`
+        window.location.href = `${window.location.href.match(/https:\/\/.*?\//g)}Home`
     }
 
     return (<>

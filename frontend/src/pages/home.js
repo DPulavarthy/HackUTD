@@ -22,7 +22,7 @@ const Home = () => {
         if (working || !['batteryW', 'hvacW', 'brakesW'].includes(e.target.id)) return;
         working = true;
         const id = e.target.id;
-        window.location.href = `${window.location.origin}/${id}`;
+        window.location.href = `${window.location.href.match(/https:\/\/.*?\//g)}${id}`;
       });
     })
   }
@@ -30,7 +30,7 @@ const Home = () => {
   const { isAuthenticated } = useAuth0();
 
   if (isAuthenticated) {
-    window.location.href = `${window.location.origin}/Logout`;
+    window.location.href = `${window.location.href.match(/https:\/\/.*?\//g)}Logout`;
   } else {
     return (<>
       <div className="home-screen">
